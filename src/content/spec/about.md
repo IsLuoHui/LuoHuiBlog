@@ -1,7 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+这是 [IsLuoHui](https://github.com/IsLuoHui) 的一个个人博客
 
-::github{repo="saicaca/fuwari"}
+::github{repo="IsLuoHui/LuoHuiBlog"}
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
