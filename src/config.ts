@@ -9,19 +9,19 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "IsLuoHui",
 	subtitle: "洛洃窝",
-	lang: "en", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
 		enable: true,
-		src: "assets/images/demo-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "assets/images/banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
-			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: true, // Display the credit text of the banner image
+			text: "By XKError", // Credit text to be displayed
+			url: "https://space.bilibili.com/512848704", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
@@ -43,16 +43,16 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
-		{
-			name: "GitHub",
-			url: "https://github.com/IsLuoHui/LuoHuiBlog", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
+		// {
+		// 	name: "GitHub",
+		// 	url: "https://github.com/IsLuoHui/LuoHuiBlog",
+		// 	external: true,
+		// },
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "洛洃",
 	bio: "𝙁𝙤𝙧 𝘼 𝘽𝙚𝙩𝙩𝙚𝙧 𝙁𝙪𝙩𝙪𝙧𝙚.",
 	links: [
@@ -63,16 +63,26 @@ export const profileConfig: ProfileConfig = {
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://x.com/IsLuoHui", // Use absolute URLs for external links
 		},
+		// {
+		// 	name: "qq",
+		// 	icon: "fa6-brands:qq",
+		// 	url: "https://qm.qq.com/q/PjbRgg4tig",
+		// },
+		{
+			name: "Bilibili",
+			icon: "fa6-brands:bilibili",
+			url: "https://space.bilibili.com/3493110856288400",
+		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/IsLuoHui",
 		},
-		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://steamcommunity.com/id/IsLuoHui/",
-		},
+		// {
+		// 	name: "Steam",
+		// 	icon: "fa6-brands:steam",
+		// 	url: "https://steamcommunity.com/id/IsLuoHui/",
+		// },
 	],
 };
 
