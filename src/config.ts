@@ -20,7 +20,7 @@ export const siteConfig: SiteConfig = {
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: true, // Display the credit text of the banner image
-			text: "By XKError", // Credit text to be displayed
+			text: "Drawn By XKError", // Credit text to be displayed
 			url: "https://space.bilibili.com/512848704", // (Optional) URL link to the original artwork or artist's page
 		},
 	},

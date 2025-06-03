@@ -97,5 +97,17 @@
         overflow-x: auto;
         margin: 1em 0;
     }
-    
+
+    .heimu {
+        background-color: black;
+        color: black;
+        text-shadow: none;
+        border-radius: 6px;
+        padding: 2px 4px;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .heimu:hover {
+        color: white !important;
+    }
 }
