@@ -1,0 +1,57 @@
+---
+import I18nKey from "../../i18n/i18nKey";
+import { i18n } from "../../i18n/translation";
+import WidgetLayout from "./WidgetLayout.astro";
+
+const className = Astro.props.class;
+const style = Astro.props.style;
+---
+
+<WidgetLayout name={i18n(I18nKey.hitokoto)} id="hitokoto" class={className} style={style}>
+    <div
+        id="hitokoto-text"
+        class:list={`
+            w-full
+            rounded-lg
+            bg-none
+            hover:bg-[var(--btn-plain-bg-hover)]
+            active:bg-[var(--btn-plain-bg-active)]
+            transition-all
+            pl-2
+            hover:pl-3
+            text-neutral-700
+            hover:text-[var(--primary)]
+            dark:text-neutral-300
+            dark:hover:text-[var(--primary)]
+            cursor-pointer
+        `}
+    >
+    加载中...</div>
+    <div
+        id="hitokoto-from"
+        class="w-full text-right text-xs text-neutral-400 dark:text-neutral-500 mt-1"
+    ></div>
+    <script type="module" is:inline>
+        let hitokotoId = null;
+        async function fetchHitokoto() {
+            try {
+                const res = await fetch('https://v1.hitokoto.cn/');
+                const data = await res.json();
+                document.getElementById('hitokoto-text').innerText = data.hitokoto;
+                document.getElementById('hitokoto-from').innerText = data.from ? `—— ${data.from}` : '';
+                hitokotoId = data.id;
+            } catch {
+                document.getElementById('hitokoto-text').innerText = '一言获取失败，请刷新重试。';
+                document.getElementById('hitokoto-from').innerText = '';
+                hitokotoId = null;
+            }
+        }
+        fetchHitokoto();
+
+        document.getElementById('hitokoto-text').onclick = function () {
+            if (hitokotoId) {
+                window.open(`https://hitokoto.cn/?id=${hitokotoId}`, '_blank');
+            }
+        };
+    </script>
+</WidgetLayout>
