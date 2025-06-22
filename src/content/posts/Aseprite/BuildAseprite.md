@@ -17,8 +17,8 @@ draft: false
 此段摘自<a href="https://en.wikipedia.org/wiki/Aseprite" target="_blank">Aseprite 维基百科📙</a>。
 
 由于从steam和官方网站获取软件都<span class="heimu" title="你知道的太多了">需要付费</span>不方便，而官方又对软件开源了并提供了编译教程[INSTALL.md](https://github.com/aseprite/aseprite/blob/main/INSTALL.md)，于是我们可以自己编译源代码来白嫖软件😋。
-# 准备工作
 
+# 准备工作
 首先，我们在 github 上获取 <a href="https://github.com/aseprite/aseprite/releases/latest" target="_blank">Aseprite📥</a> 源代码。
 
 然后下载编译所需要用到的工具：
