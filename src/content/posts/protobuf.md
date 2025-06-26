@@ -25,3 +25,11 @@ cmake --build build --config Release
 cmake --install build
 ```
 然后你就可以在C盘根目录看到依赖库了
+
+当然，你会发现这是个Release库不能调试，所以就要编译为Debug版本，这两个版本并不冲突
+```bash
+cmake -S . -B build-debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=C:/protobuf-3.6.1-debug -Dprotobuf_MSVC_STATIC_RUNTIME=ON
+cmake --build build-debug --config Debug
+cmake --install build-debug --config Debug
+```
+同样的路径也在C盘
