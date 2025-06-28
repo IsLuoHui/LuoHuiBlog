@@ -10,7 +10,7 @@ draft: false
 ---
 
 ## 使用框架
-本博客使用的为 **🍥Fuwari** ，一个基于 [Astro](https://astro.build/) 开发的静态博客模板。
+本站使用的为 **🍥Fuwari** ，一个基于 [Astro](https://astro.build/) 开发的静态网页模板。
 
 ::github{repo="saicaca/fuwari"}
 

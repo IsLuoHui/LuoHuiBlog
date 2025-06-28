@@ -19,7 +19,7 @@ draft: false
 由于从steam和官方网站获取软件都<span class="heimu" title="你知道的太多了">需要付费</span>不方便，而官方又对软件开源了并提供了编译教程[INSTALL.md](https://github.com/aseprite/aseprite/blob/main/INSTALL.md)，于是我们可以自己编译源代码来白嫖软件😋。
 
 # 准备工作
-首先，我们在 github 上获取 <a href="https://github.com/aseprite/aseprite/releases/latest" target="_blank">Aseprite📥</a> 源代码。
+首先，在 github 上获取 <a href="https://github.com/aseprite/aseprite/releases/latest" target="_blank">Aseprite📥</a> 源代码。
 
 然后下载编译所需要用到的工具：
 - <a href="https://cmake.org/download" target="_blank">CMake📥</a>：自动化软件构建程序。
@@ -47,14 +47,14 @@ ninja --veriosn
 
 ## Windows 10 SDK
 从官网下载得到 `VisualStudioSetup.exe`，通过这个安装 Visual Studio Installer，如果已经安装过 Visual Studio，则直接在windows中搜索并打开即可。  
-使用 Visual Studio Installer 添加或着修改已安装的 Visual Studio ，在**工作负荷**中勾选添加**使用C++的桌面开发**。
+使用 Visual Studio Installer 添加或者修改已安装的 Visual Studio ，在**工作负荷**中勾选添加**使用C++的桌面开发**。
 ![img](./VSI1.jpg)
 然后在**单个组件**的**SDK、库和框架中**仅勾选`Windows 10 SDK`。
 ![img](./VSI2.jpg)
 完成以上设置后在右下角选择安装或者修改。
 
 ## Aseprite & Skin
-github上下载完 `Aseprite-Source.zip` 与 `Skia-Windows-Release-x64.zip` 后找个心仪的位置解压Aseprite源码和Skia库，并创建 `build.bat`脚本来一键编译：
+github上下载完 `Aseprite-Source.zip` 与 `Skia-Windows-Release-x64.zip` 后找个位置解压Aseprite源码和Skia库，并创建 `build.bat`脚本来一键编译：
 ```
 AsepriteBuild/
 ├── Aseprite-Source/
