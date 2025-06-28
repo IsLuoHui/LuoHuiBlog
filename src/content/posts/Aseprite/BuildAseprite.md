@@ -11,14 +11,14 @@ draft: false
 
 > 上图来源于官方源程序<a href="https://github.com/aseprite/aseprite/blob/main/data/icons/hd/asehd-blush.png" target="_blank">图标</a>
 
-# 前言
+# 📃 前言
 ![image](./AsepriteHeaderLogo.png)
 > **Aseprite** 是一款专有的、可获取源代码的图像编辑器，主要用于像素艺术绘画和动画。它可在 Windows 、macOS 和 Linux 上运行，并具有用于图像和动画编辑的不同工具，如图层、框架、图块地图支持、命令行界面、Lua 脚本等。它由 Igara Studio SA 开发，由开发人员 David、Gaspar 和 Martín Capello 领导。Aseprite 可以作为免费软件下载（尽管它没有保存精灵的功能），也可以在 Steam 或 Itch.io 上购买。Aseprite 源代码和二进制文件在 EULA 、教育和 Steam 专有许可下分发。  
 此段摘自<a href="https://en.wikipedia.org/wiki/Aseprite" target="_blank">Aseprite 维基百科📙</a>。
 
 由于从steam和官方网站获取软件都<span class="heimu" title="你知道的太多了">需要付费</span>不方便，而官方又对软件开源了并提供了编译教程[INSTALL.md](https://github.com/aseprite/aseprite/blob/main/INSTALL.md)，于是我们可以自己编译源代码来白嫖软件😋。
 
-# 准备工作
+# 🧰 环境准备
 首先，在 github 上获取 <a href="https://github.com/aseprite/aseprite/releases/latest" target="_blank">Aseprite📥</a> 源代码。
 
 然后下载编译所需要用到的工具：
@@ -72,7 +72,7 @@ AsepriteBuild/
 └── build.bat
 ```
 
-# 编译
+# 🛠️ 编译构建
 编辑 `build.bat` 内容： 
 ```bat
 @echo off

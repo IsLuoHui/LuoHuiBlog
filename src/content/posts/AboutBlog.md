@@ -1,7 +1,7 @@
 ---
-title: 关于这篇博客
+title: 关于本站
 published: 2025-06-02
-updated: 2025-06-02
+updated: 2025-06-28
 description: '博客内相关内容解释'
 image: ''
 tags: [Astro]
