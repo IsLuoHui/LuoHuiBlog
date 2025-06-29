@@ -1,7 +1,7 @@
 ---
-title: 如何编译Aseprite
+title: Aseprite编译
 published: 2025-06-03
-updated: 2025-06-03
+updated: 2025-06-29
 description: '使用官方提供的源代码来编译Aseprite的教程'
 image: './AsepriteIcon.png'
 tags: [Tools,Tutorial]
@@ -16,12 +16,12 @@ draft: false
 > **Aseprite** 是一款专有的、可获取源代码的图像编辑器，主要用于像素艺术绘画和动画。它可在 Windows 、macOS 和 Linux 上运行，并具有用于图像和动画编辑的不同工具，如图层、框架、图块地图支持、命令行界面、Lua 脚本等。它由 Igara Studio SA 开发，由开发人员 David、Gaspar 和 Martín Capello 领导。Aseprite 可以作为免费软件下载（尽管它没有保存精灵的功能），也可以在 Steam 或 Itch.io 上购买。Aseprite 源代码和二进制文件在 EULA 、教育和 Steam 专有许可下分发。  
 此段摘自<a href="https://en.wikipedia.org/wiki/Aseprite" target="_blank">Aseprite 维基百科📙</a>。
 
-由于从steam和官方网站获取软件都<span class="heimu" title="你知道的太多了">需要付费</span>不方便，而官方又对软件开源了并提供了编译教程[INSTALL.md](https://github.com/aseprite/aseprite/blob/main/INSTALL.md)，于是我们可以自己编译源代码来白嫖软件😋。
+由于从steam和官方网站获取软件都<span class="heimu" title="你知道的太多了">需要付费</span>不方便，但官方对软件开源并提供了编译教程[INSTALL.md](https://github.com/aseprite/aseprite/blob/main/INSTALL.md)，所以可以自己编译源代码来白嫖软件😋。
 
 # 🧰 环境准备
-首先，在 github 上获取 <a href="https://github.com/aseprite/aseprite/releases/latest" target="_blank">Aseprite📥</a> 源代码。
+在 github 上获取 <a href="https://github.com/aseprite/aseprite/releases/latest" target="_blank">Aseprite📥</a> 源代码。
 
-然后下载编译所需要用到的工具：
+下载编译所需要用到的工具：
 - <a href="https://cmake.org/download" target="_blank">CMake📥</a>：自动化软件构建程序。
 - <a href="https://github.com/ninja-build/ninja/releases/latest" target="_blank">Ninja📥</a>：高速构建系统，主要用于加速 C/C++ 项目的编译过程，与CMake配合使用。
 - <a href="https://github.com/aseprite/skia/releases/latest" target="_blank">Skia📥</a>：2D图形库，但我们需要下载的是Aseprite魔改后的。
@@ -53,8 +53,8 @@ ninja --veriosn
 ![img](./VSI2.jpg)
 完成以上设置后在右下角选择安装或者修改。
 
-## Aseprite & Skin
-github上下载完 `Aseprite-Source.zip` 与 `Skia-Windows-Release-x64.zip` 后找个位置解压Aseprite源码和Skia库，并创建 `build.bat`脚本来一键编译：
+# 📦 目录配置
+github上下载完 `Aseprite-Source.zip` 与 `Skia-Windows-Release-x64.zip` 解压Aseprite源码和Skia库，并创建 `build.bat`脚本来一键编译：
 ```
 AsepriteBuild/
 ├── Aseprite-Source/

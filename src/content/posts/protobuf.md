@@ -12,7 +12,7 @@ draft: false
 # 📃 前言
 
 Protocol Buffers（简称 Protobuf）是由 Google 开发的一种**高效**、**可扩展**、**跨语言**、**跨平台**的**结构化数据序列化协议**。它常用于网络通信、数据存储、配置文件等场景，尤其适合对性能和数据体积有要求的系统。
-- **高效**：二进制格式，序列化/反序列化速度远超json/xml
+- **高效**：二进制格式，序列化/反序列化速度远超json/xml。
 - **跨语言**：支持多种语言：C++、Java、Python、Go、C#、Rust、Dart、Kotlin 等。
 
 # 🧰 环境准备
@@ -47,4 +47,4 @@ cmake --build . --config Release
 cmake --install . --config Debug --prefix ../install/Debug
 cmake --install . --config Release --prefix ../install/Release
 ```
-输出文件在cmake目录中
+输出文件在cmake目录中，cmake并不会自动安装Debug构建的pdb文件，需要自行取build/Debug复制。
