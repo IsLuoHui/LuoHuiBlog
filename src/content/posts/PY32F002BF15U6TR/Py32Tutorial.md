@@ -6,7 +6,7 @@ description: 'py32f002b系列芯片启动教程'
 image: ''
 tags: [Tutorial]
 category: 'Embedded'
-draft: false
+draft: true
 ---
 
 # 芯片介绍
