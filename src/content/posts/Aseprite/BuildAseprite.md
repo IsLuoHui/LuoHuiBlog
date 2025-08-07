@@ -2,7 +2,7 @@
 title: Aseprite编译
 published: 2025-06-03
 updated: 2025-06-29
-description: '使用官方提供的源代码来编译Aseprite的教程'
+description: '零基础使用官方提供的源代码来编译Aseprite的教程'
 image: './AsepriteIcon.png'
 tags: [Tools,Tutorial]
 category: 'Software'
