@@ -1,5 +1,5 @@
 ---
-title: protobuf构建
+title: Protobuf构建
 published: 2025-06-27
 updated: 2025-06-29
 description: 'protobuf-3.7.1快速构建教程'
@@ -8,6 +8,8 @@ tags: [Tools,Notes,Tutorial]
 category: 'Software'
 draft: false 
 ---
+
+::github{repo="protocolbuffers/protobuf"}
 
 # 📃 前言
 
