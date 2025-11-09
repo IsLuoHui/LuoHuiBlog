@@ -63,6 +63,9 @@ bindPort = 7000
 #vhostHTTPPort = 80
 #vhostHTTPSPort = 443
 
+# 子域名支持
+subDomainHost = "xxxx.com"
+
 # Web 控制面板<tcp>
 webServer.addr = "0.0.0.0"
 webServer.port = 7500
