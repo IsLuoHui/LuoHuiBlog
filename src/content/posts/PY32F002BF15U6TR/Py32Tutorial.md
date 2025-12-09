@@ -1,5 +1,5 @@
 ---
-title: 从零开始学PY32F002B
+title: PY32F002B教程
 published: 2025-06-19
 updated: 2025-06-19
 description: 'py32f002b系列芯片启动教程'
