@@ -11,7 +11,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "Blog",
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
-		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+		hue: 300, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
@@ -52,14 +52,16 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		{
 			name: "qq",
-			icon: "fa6-brands:qq",
-			url: "https://qm.qq.com/q/PjbRgg4tig",
+			icon: "fa6-brands:qq", // Visit https://icones.js.org/ for icon codes
+			// You will need to install the corresponding icon set if it's not already included
+			// `pnpm add @iconify-json/<icon-set-name>`
+			url: "https://qm.qq.com/q/PjbRgg4tig", // Use absolute URLs for external links
 		},
-		{
-			name: "Bilibili",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/3493110856288400",
-		},
+		//{
+		//	name: "Bilibili",
+		//	icon: "fa6-brands:bilibili",
+		//	url: "https://space.bilibili.com/3493110856288400",
+		//},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
@@ -71,12 +73,15 @@ export const profileConfig: ProfileConfig = {
 			url: "https://steamcommunity.com/id/IsLuoHui/",
 		},
 		{
-			name: "Twitter",
-			icon: "fa6-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://x.com/IsLuoHui", // Use absolute URLs for external links
+			name: "Email",
+			icon: "fa6-regular:envelope",
+			url: "mailto:isluohui@outlook.com",
 		},
+		//{
+		//	name: "Twitter",
+		//	icon: "fa6-brands:x-twitter",
+		//	url: "https://x.com/IsLuoHui",
+		//},
 	],
 };
 
