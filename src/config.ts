@@ -36,6 +36,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		LinkPreset.FriendLink,
 		// {
 		// 	name: "GitHub",
 		// 	url: "https://github.com/IsLuoHui/LuoHuiBlog",
@@ -50,17 +51,10 @@ export const profileConfig: ProfileConfig = {
 	bio: "𝙁𝙤𝙧 𝘼 𝘽𝙚𝙩𝙩𝙚𝙧 𝙁𝙪𝙩𝙪𝙧𝙚.",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://x.com/IsLuoHui", // Use absolute URLs for external links
+			name: "qq",
+			icon: "fa6-brands:qq",
+			url: "https://qm.qq.com/q/PjbRgg4tig",
 		},
-		// {
-		// 	name: "qq",
-		// 	icon: "fa6-brands:qq",
-		// 	url: "https://qm.qq.com/q/PjbRgg4tig",
-		// },
 		{
 			name: "Bilibili",
 			icon: "fa6-brands:bilibili",
@@ -71,11 +65,18 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/IsLuoHui",
 		},
-		// {
-		// 	name: "Steam",
-		// 	icon: "fa6-brands:steam",
-		// 	url: "https://steamcommunity.com/id/IsLuoHui/",
-		// },
+		{
+			name: "Steam",
+			icon: "fa6-brands:steam",
+			url: "https://steamcommunity.com/id/IsLuoHui/",
+		},
+		{
+			name: "Twitter",
+			icon: "fa6-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
+			// You will need to install the corresponding icon set if it's not already included
+			// `pnpm add @iconify-json/<icon-set-name>`
+			url: "https://x.com/IsLuoHui", // Use absolute URLs for external links
+		},
 	],
 };
 
